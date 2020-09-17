@@ -1,5 +1,5 @@
-FROM ubuntu-slim
+FROM ubuntu
 
-USER    nobody
+USER nobody
 
 CMD [ "id" ]
