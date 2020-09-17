@@ -1,5 +1,5 @@
 FROM ubuntu
 
-USER nobody
+USER somebody
 
 CMD [ "id" ]

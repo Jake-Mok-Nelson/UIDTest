@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uidtest-deployment
+  labels:
+    app: uidtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uidtest
+  template:
+    metadata:
+      labels:
+        app: uidtest
+    spec:
+      containers:
+      - name: uidtest
+        image: docker pull jakesmnelson/uidtest:latest
